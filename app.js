@@ -2,6 +2,8 @@ process.env.SLACK_VERIFY_TOKEN = "TEST";
 process.env.SLACK_BOT_COMMAND = "TEST";
 process.env.SLACK_CLIENT_ID = "TEST";
 process.env.SLACK_CLIENT_SECRET = "TEST";
+process.env.DEBUG_LEVEL = "silly";
+
 
 const http = require('http'),
     fs = require('fs'),
