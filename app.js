@@ -23,8 +23,9 @@ app.get('/health', function(req, res){
 });
 
 app.get('/info', function(req, res){
-  res.send(JSON.stringify(sysInfo[url.slice(6)]()));
+  res.send(JSON.stringify(sysInfo.gen()));
 });
+
 
 
 app.listen(env.NODE_PORT || 3000, env.NODE_IP || 'localhost', function() {
