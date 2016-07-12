@@ -3,8 +3,7 @@ const http         = require('http'),
       path         = require('path'),
       contentTypes = require('./utils/content-types'),
       sysInfo      = require('./utils/sys-info'),
-      env          = process.env,
-      quotes       = require('./data/quotes.json');
+      env          = process.env;
 
 let server = http.createServer(function (req, res) {
   let url = req.url;
