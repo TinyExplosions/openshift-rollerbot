@@ -11,7 +11,7 @@ const http = require('http'),
     contentTypes = require('./utils/content-types'),
     sysInfo = require('./utils/sys-info'),
     express = require('express'),
-    // cors = require('cors'),
+    cors = require('cors'),
     bodyParser = require('body-parser'),
     env = process.env;
 
