@@ -3,7 +3,7 @@ process.env.SLACK_BOT_COMMAND = "TEST";
 process.env.SLACK_CLIENT_ID = "TEST";
 process.env.SLACK_CLIENT_SECRET = "TEST";
 process.env.DEBUG_LEVEL = "silly";
-
+global.__base = __dirname + '/';
 
 const http = require('http'),
     fs = require('fs'),
