@@ -17,8 +17,8 @@ const http = require('http'),
 
 var app = express();
 
-// app.use(cors());
-app.use(bodyParser());
+app.use(cors());
+app.use(bodyParser.json());
 
 app.use('/', require('./lib/signupPage')());
 app.use('/slackbot', require('./lib/slackbot')());
