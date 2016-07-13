@@ -14,9 +14,9 @@ html
       - } else if (ok === false) {
       h1 Something went wrong installing the bot, please try again.
       - } else {
-      h1 To install your bot, click the button below
+      h1 To install your roller bot, click the button below
       - }
-      a.slack-link(href='https://slack.com/oauth/authorize?scope=incoming-webhook,commands&client_id=#{process.env.SLACK_CLIENT_SECRET}')
+      a.slack-link(href='https://slack.com/oauth/authorize?scope=incoming-webhook,commands&client_id=#{process.env.SLACK_CLIENT_ID}')
         svg#add-to-slack-button(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 271 76')
           style.
             .slack-button-0 {
