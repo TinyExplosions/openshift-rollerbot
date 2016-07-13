@@ -26,10 +26,10 @@ exports.gen = function () {
     value: os.cpus().length
   }, {
     name:  'Total Memory',
-    value: `${Math.round(os.totalmem() / 1048576)} MB`
+    value: '${Math.round(os.totalmem() / 1048576)} MB'
   }, {
     name:  'Gear Memory',
-    value: `${env.OPENSHIFT_GEAR_MEMORY_MB} MB`
+    value: '${env.OPENSHIFT_GEAR_MEMORY_MB} MB'
   }, {
     name:  'NODE_ENV',
     value: env.NODE_ENV
@@ -39,9 +39,9 @@ exports.gen = function () {
 exports.poll = function () {
   return [{
     name: 'Free Memory',
-    value: `${Math.round(os.freemem() / 1048576)} MB`
+    value: '${Math.round(os.freemem() / 1048576)} MB'
   }, {
     name: 'Uptime',
-    value: `${os.uptime()} s`
+    value: '${os.uptime()} s'
   }];
 };
